@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ff9933; /* fallback for old browsers */
+  background: #138808; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff9933,
+    #fff,
+    #138808
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff9933,
+    #fff,
+    #138808
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+div.container {
+  width: 95%;
+  border-radius: 12px;
+  background: #acaba9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #d3d3d2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #e0e0e0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+p#countdown {
+  font-family: "Goldman", cursive;
+  font-size: 20px;
+  position: fixed;
+  padding: 10px;
+  margin: -70px;
+  opacity: 0;
+  z-index: 1;
+  color: white;
+  background-color: #808080;
+  border: 8px solid rgb(0, 132, 240);
+}
+
+div.jumbotron {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 380px;
+  display: flex;
+  border: 4px solid black;
+  border-radius: 12px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/images/armed.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.jumbotron h1 {
+  font-family: "Merriweather", serif;
+  margin-bottom: 130px;
+  color: #0a0c01;
+  font-weight: 800;
+  background-color: #fff;
+  border: 4px solid black;
+  border-radius: 10px;
+}
+
+div.jumbotron a {
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+a {
+  font-family: "Caladea", serif;
+}
+
+h5.describe {
+  font-family: "Roboto", sans-serif;
+}
+
+div h4 {
+  text-transform: uppercase;
+  font-family: "Rakkas", cursive;
+}
+
+hr.style {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  width: 80%;
+}
+
+ul {
+  width: 90%;
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: left;
+}
+
+ul li i {
+  text-align: right;
+  float: right;
+  margin-top: 5px;
+  color: #155724;
+  opacity: 0;
+}
+
+div.submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+  opacity: 0;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+@media (max-width: 470px) and (min-width: 350px) {
+  div.jumbotron {
+    width: 100%;
+    margin-right: 500px;
+    margin-left: 10px;
+    height: 450px;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://cdn.pixabay.com/photo/2018/01/21/14/36/india-flag-3096740__340.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 660px) and (min-width: 350px) {
+  p#countdown {
+    font-family: "Goldman", cursive;
+    font-size: 20px;
+    position: fixed;
+    padding: 10px;
+    margin: -10px;
+    opacity: 0;
+    z-index: 1;
+    color: white;
+    background-color: #808080;
+    border: 8px solid rgb(0, 132, 240);
+  }
+}
